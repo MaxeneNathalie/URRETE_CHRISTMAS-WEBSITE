@@ -1,0 +1,17 @@
+@use "../abstract/" as *;
+
+.button {
+  padding: 0.7rem 1.2rem;
+  display: inline-block;
+  font-size: 0.8rem;
+
+  &.btn--primary {
+    background: $clr-primary;
+    color: $clr-light;
+  }
+
+  &.btn--secondary {
+    background: $clr-secondary;
+    color: $clr-light;
+  }
+}

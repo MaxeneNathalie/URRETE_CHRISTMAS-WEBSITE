@@ -1,0 +1,17 @@
+@use "../abstract/" as *;
+
+.footer {
+  background: $clr-secondary;
+  color: $clr-light;
+  padding: 3rem 0;
+
+  &_wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  ul {
+    list-style: none;
+  }
+}

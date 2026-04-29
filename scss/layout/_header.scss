@@ -1,0 +1,26 @@
+@use "../abstract/" as *;
+
+.header {
+  background: $clr-light;
+  padding: 1rem 0;
+
+  &_wrapper {
+    @include flexBetween;
+  }
+
+  h4 {
+    color: $clr-primary;
+    text-transform: none;
+  }
+
+  ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    a {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+  }
+}
