@@ -18,3 +18,13 @@ small {
   font-size: 0.9rem;
   font-weight: 500;
 }
+
+.underline {
+  text-decoration: underline;
+  color: $clr-dark;
+}
+
+.underline--light {
+  text-decoration: underline;
+  color: $clr-light;
+}

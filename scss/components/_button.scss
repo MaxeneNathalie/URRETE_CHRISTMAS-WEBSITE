@@ -1,17 +1,25 @@
 @use "../abstract/" as *;
 
 .button {
-  padding: 0.7rem 1.2rem;
   display: inline-block;
-  font-size: 0.8rem;
 
   &.btn--primary {
     background: $clr-primary;
     color: $clr-light;
+    height: 1.5rem;
+    border: none;
+    font-size: 0.6rem;
+    text-align: start;
+    padding: 0.2rem 0.5rem;
   }
 
   &.btn--secondary {
     background: $clr-secondary;
     color: $clr-light;
+    margin-top: auto;
+    display: block;
+    text-align: center;
+    font-size: 0.7rem;
+    padding: 0.7rem;
   }
 }

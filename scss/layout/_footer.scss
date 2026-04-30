@@ -1,17 +1,128 @@
 @use "../abstract/" as *;
 
+// FOOTER
+
 .footer {
   background: $clr-secondary;
   color: $clr-light;
-  padding: 3rem 0;
+  padding: 2.5rem 0 3rem;
+  margin: 0;
 
-  &_wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  a {
+    color: $clr-light;
+    text-decoration: underline;
+  }
+}
+
+.footer_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+  }
+
+  p {
+    font-size: 0.7rem;
+  }
+}
+
+.footer_logo {
+  width: 55px;
+  height: 55px;
+  border: 2px solid $clr-light;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.footer_wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+  gap: 3rem;
+}
+
+.footer_about {
+  max-width: 280px;
+
+  h4 {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: $font-primary;
+  }
+
+  p {
+    font-size: 0.75rem;
+    line-height: 1.4;
+  }
+}
+
+.footer_col {
+  h4 {
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    font-family: $font-primary;
   }
 
   ul {
     list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+  }
+
+  a {
+    font-size: 0.7rem;
+  }
+}
+
+/* 1020px */
+@media screen and (max-width: 1020px) {
+  .footer {
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .footer_wrapper {
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+/* 520px */
+@media screen and (max-width: 520px) {
+  .footer {
+    padding: 2rem 1.5rem;
+  }
+
+  .footer_top {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .footer_wrapper {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .footer_about {
+    max-width: 100%;
   }
 }
